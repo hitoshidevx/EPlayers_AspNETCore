@@ -20541,8 +20541,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Yokogawa\\Documents\\Projetos (treino)\\EPlayers_AspNETCore\\Views\\Equipes\\Index.cshtml",
-      "TargetPath": "Views\\Equipes\\Index.cshtml",
+      "FilePath": "c:\\Users\\Yokogawa\\Documents\\Projetos (treino)\\EPlayers_AspNETCore\\Views\\Equipe\\Index.cshtml",
+      "TargetPath": "Views\\Equipe\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
