@@ -36,3 +36,4 @@ C:\Users\Yokogawa\Documents\Projetos (treino)\EPlayers_AspNETCore\obj\Debug\netc
 C:\Users\Yokogawa\Documents\Projetos (treino)\EPlayers_AspNETCore\obj\Debug\netcoreapp3.1\EPlayers_AspNETCore.genruntimeconfig.cache
 C:\Users\Yokogawa\Documents\Projetos (treino)\EPlayers_AspNETCore\obj\Debug\netcoreapp3.1\EPlayers_AspNETCore.csproj.CopyComplete
 C:\Users\Yokogawa\Documents\Projetos (treino)\EPlayers_AspNETCore\obj\Debug\netcoreapp3.1\Razor\Views\Equipe\Index.cshtml.g.cs
+C:\Users\Yokogawa\Documents\Projetos (treino)\EPlayers_AspNETCore\obj\Debug\netcoreapp3.1\Razor\Views\Noticias\Index.cshtml.g.cs
