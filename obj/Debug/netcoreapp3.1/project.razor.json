@@ -20541,6 +20541,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Yokogawa\\Documents\\Projetos (treino)\\EPlayers_AspNETCore\\Views\\Equipes\\Index.cshtml",
+      "TargetPath": "Views\\Equipes\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Yokogawa\\Documents\\Projetos (treino)\\EPlayers_AspNETCore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
