@@ -54,5 +54,13 @@ namespace EPlayers_AspNETCore.Controllers
             noticiasModel.Create(novaNoticia);
             return LocalRedirect("~/Noticias");
         }
+
+        [Route("Noticias/{id}")]
+        public IActionResult Excluir(int id)
+        {
+            noticiasModel.Delete(id);
+            return LocalRedirect("~/Noticias");
+        }
+
     }
 }

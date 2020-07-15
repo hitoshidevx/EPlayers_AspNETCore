@@ -26,7 +26,8 @@
         <th>ID</th>
         <th>Título</th>
         <th>Texto</th>
-        <th>Imagem</th>
+        <th>Foto</th>
+        <th>Ações</th>
     </thead>
     <tbody>
         @foreach (var item in ViewBag.Noticia){
@@ -34,7 +35,12 @@
                 <td>@item.IdNoticia</td>
                 <td>@item.Titulo</td>
                 <td>@item.Texto</td>
-                <td>@item.Imagem</td>
+                <td>
+                    <img src="img/Noticias/@item.Imagem" alt="Imagem da Noticia @item.Titulo" />
+                </td>
+                <td>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Noticias" asp-action="Excluir" asp-route-id="@item.IdNoticia">Excluir</a>
+                </td>
             </tr>
         }
     </tbody>
