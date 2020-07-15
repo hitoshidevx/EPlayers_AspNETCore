@@ -54,7 +54,7 @@ namespace EPlayers_AspNETCore.Models
             linhas.Add( PrepararLinha(e) );
             RewriteCSV(PATH, linhas);
         }
-        public void Delete(Equipe e)
+        public void Delete(int IdEquipe)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
             linhas.RemoveAll(x => x.Split(";")[0] == IdEquipe.ToString());

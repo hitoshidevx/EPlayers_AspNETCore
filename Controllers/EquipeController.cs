@@ -50,9 +50,17 @@ namespace EPlayers_AspNETCore.Controllers
             // Upload Final
 
             equipeModel.Create(novaEquipe);
-            ViewBag.Equipes = equipeModel.ReadAll();
 
+            ViewBag.Equipes = equipeModel.ReadAll();
             return LocalRedirect("~/Equipe");
         }
+
+        [Route("{id}")]
+        public IActionResult Excluir(int id)
+        {
+            equipeModel.Delete(id);
+            return LocalRedirect("~/Equipe");
+        }
+
     }
 }

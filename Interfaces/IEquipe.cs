@@ -15,6 +15,6 @@ namespace EPlayers_AspNETCore.Interfaces
          void Update(Equipe e);
 
          //Excluir
-         void Delete(Equipe e);
+         void Delete(int id);
     }
 }
