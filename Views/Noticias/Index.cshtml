@@ -3,7 +3,7 @@
         ViewData["Title"] = "Notícias";
     }
 
-    <form action="@Url.Action("Cadastrar")" method="post">
+    <form action="@Url.Action("Cadastrar")" method="post" enctype="multipart/form-data">
 
         <label for="IdNoticia">IdNoticia</label>
         <input type="text" name="IdNoticia" id="IdNoticia">
@@ -15,7 +15,7 @@
         <input type="text" name="Texto" id="Texto">
 
         <label for="Imagem">Imagem</label>
-        <input type="text" name="Imagem" id="Imagem">
+        <input type="file" name="Imagem" id="Imagem">
 
         <button type="submit">Cadastrar!</button>
 
