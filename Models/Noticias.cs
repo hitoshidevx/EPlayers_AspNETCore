@@ -19,18 +19,30 @@ namespace EPlayers_AspNETCore.Models
             CreateFolderAndFile(PATH);
         }
 
+        /// <summary>
+        /// Método que cadastra uma linha no csv    .
+        /// </summary>
+        /// <param name="n"></param>
         public void Create(Noticias n)
         {
             string[] linha = { PrepararLinha(n) };
             File.AppendAllLines(PATH, linha);
         }
 
+        /// <summary>
+        /// Método que prepara a linha que vai ser cadastrada com os atributos necessários.
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns>Retorna a linha com os atributos da classe</returns>
         public string PrepararLinha(Noticias n)
         {
             return $"{n.IdNoticia};{n.Titulo};{n.Texto};{n.Imagem}";
         }
 
-
+        /// <summary>
+        /// Método que lê os arquivos da lista feita.
+        /// </summary>
+        /// <returns></returns>
         public List<Noticias> ReadAll()
         {
             List<Noticias> noticia = new List<Noticias>();
@@ -50,6 +62,10 @@ namespace EPlayers_AspNETCore.Models
             return noticia;
         }
 
+        /// <summary>
+        /// Método que atualiza e reescreve uma linha.
+        /// </summary>
+        /// <param name="n"></param>
         public void Update(Noticias n)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
@@ -57,6 +73,11 @@ namespace EPlayers_AspNETCore.Models
             linhas.Add( PrepararLinha(n) );
             RewriteCSV(PATH, linhas);
         }
+
+        /// <summary>
+        /// Método que exclue uma linha.
+        /// </summary>
+        /// <param name="IdNoticia"></param>
         public void Delete(int IdNoticia)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);

@@ -18,18 +18,30 @@ namespace EPlayers_AspNETCore.Models
             CreateFolderAndFile(PATH);
         }
 
+        /// <summary>
+        /// Método que cadastra uma linha no csv.
+        /// </summary>
+        /// <param name="e"></param>
         public void Create(Equipe e)
         {
             string[] linha = { PrepararLinha(e) };
             File.AppendAllLines(PATH, linha);
         }
 
+        /// <summary>
+        /// Método que prepara a linha que vai ser cadastrada com os atributos necessários.
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns>Retorna a linha com os atributos da classe</returns>
         private string PrepararLinha(Equipe e)
         {
             return $"{e.IdEquipe};{e.Nome};{e.Imagem}";
         }
 
-
+        /// <summary>
+        /// Método que lê os arquivos da lista feita.
+        /// </summary>
+        /// <returns></returns>
         public List<Equipe> ReadAll()
         {
             List<Equipe> equipes = new List<Equipe>();
@@ -47,6 +59,10 @@ namespace EPlayers_AspNETCore.Models
             return equipes;
         }
 
+        /// <summary>
+        /// Método que atualiza e reescreve uma linha.
+        /// </summary>
+        /// <param name="e"></param>
         public void Update(Equipe e)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
@@ -54,6 +70,11 @@ namespace EPlayers_AspNETCore.Models
             linhas.Add( PrepararLinha(e) );
             RewriteCSV(PATH, linhas);
         }
+
+        /// <summary>
+        /// Método que exclue uma linha.
+        /// </summary>
+        /// <param name="IdEquipe"></param>
         public void Delete(int IdEquipe)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
