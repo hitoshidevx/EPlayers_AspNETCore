@@ -20521,11 +20521,6 @@
   "RootNamespace": "EPlayers_AspNETCore",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Yokogawa\\Documents\\Projetos (treino)\\EPlayers_AspNETCore\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Yokogawa\\Documents\\Projetos (treino)\\EPlayers_AspNETCore\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
