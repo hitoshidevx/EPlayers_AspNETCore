@@ -356,6 +356,11 @@ table img{
     max-width: 50px;
 }
 
+table a{
+    color: var(--pink);
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1200px){
     .champion{        
         right: 3%;
